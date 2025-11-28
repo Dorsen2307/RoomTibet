@@ -309,6 +309,10 @@
 	line-height: var(--line-height_150pr);
 }
 
+#btn-search-program {
+	display: none;
+}
+
 .form__search-program {
 	background-color: var(--color_white-red);
 	height: 52px;
@@ -465,6 +469,10 @@
 	.block-search-program__form.active {
 		display: flex;
 		opacity: 1;
+	}
+
+	#btn-search-program {
+		display: block;
 	}
 
 	.block-search-program__title {
