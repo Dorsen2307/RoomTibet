@@ -1,0 +1,108 @@
+.about {
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.about__content {
+	display: flex;
+	flex-direction: column;
+	padding: 64px 25px 64px 120px;
+	gap: var(--gap_40);
+}
+
+.about__image {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 480px;
+	height: 526px;
+	flex-shrink: 0;
+}
+
+.about__image .front,
+.about__image .rear {
+	width: 350px;
+	height: 400px;
+	border-radius: var(--border-radius_24);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about__image .image {
+	width: 100%;
+}
+.about__image .rear {
+	position: relative;
+	z-index: 1;
+}
+.about__image .rear:hover {
+	z-index: 3;
+}
+.about__image .front {
+	position: relative;
+	margin-left: calc(350px - 480px);
+	margin-top: calc(526px - 400px);
+	z-index: 2;
+}
+.about__image .front::after {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 16px;
+	top: 50%;
+	left: 50%;
+	padding: 18px;
+	transform: translate(-50%, -50%);
+	background-image: url("../images/main/about/play.png");
+	background-color: var(--color_white-red_60pr);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: var(--border-radius_circle);
+	z-index: 4;
+	transition: opacity 0.2s ease-out;
+	cursor: pointer;
+}
+
+
+
+@media (max-width: 480px) {
+	.about {
+		flex-direction: column;
+		padding: 0 16px;
+		margin: 50px 0;
+		gap: var(--gap_40);
+	}
+
+	.about__image {
+		order: 1;
+		width: 100%;
+		height: auto;
+	}
+
+	.about__image .rear {
+		display: none;
+	}
+
+	.about__image .front {
+		margin: 0;
+		width: 100%;
+	}
+
+	.about__content {
+		order: 0;
+		padding: 0;
+		gap: var(--gap_24);
+	}
+
+	.content-title {
+		font-size: var(--font-size_24);
+	}
+
+	.content-info {
+		font-size: var(--font-size_16);
+	}
+}

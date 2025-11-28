@@ -1,0 +1,144 @@
+.impressions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--gap_40);
+}
+
+.impressions .content-title {
+	text-align: center;
+}
+
+.list__card-blog {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: var(--gap_20);
+	row-gap: var(--gap_24);
+}
+
+.card-blog {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--gap_24);
+	padding: 16px;
+	background-color: var(--color_white-red);
+	border-radius: var(--border-radius_10);
+	overflow: hidden;
+}
+.card-blog:hover .card-blog__title {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+.card-blog:hover .card-blog__link {
+	text-decoration: underline;
+}
+
+.card-blog__image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: var(--border-radius_6);
+	flex-shrink: 0;
+	width: 230px;
+	height: 280px;
+}
+
+.image__city {background-image: url("../images/main/impressions/city.jpg");}
+.image__sky {background-image: url("../images/main/impressions/sky.jpg");}
+.image__street {background-image: url("../images/main/impressions/street.jpg");}
+.image__castle {background-image: url("../images/main/impressions/castle.jpg");}
+
+.card-blog__content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap_24);
+	height: 100%;
+	padding: 16px 0;
+	font-family: var(--font_nunito), sans-serif;
+	flex: 1;
+	min-width: 0;
+}
+
+.card-blog__title {
+	font-size: var(--font-size_24);
+	font-weight: 700;
+	line-height: var(--line-height_32);
+	flex-grow: 0;
+}
+
+.card-blog__text {
+	font-size: var(--font-size_14);
+	font-weight: 400;
+	line-height: var(--line-height_20);
+	flex-grow: 1;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 6;
+	text-overflow: ellipsis;
+}
+
+.card-blog__footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-grow: 0;
+}
+
+.card-blog__date,
+.card-blog__link {
+	font-size: var(--font-size_14);
+	font-weight: 700;
+	line-height: var(--line-height_20);
+}
+
+.card-blog__date {
+	color: var(--color_yellow);
+}
+
+.card-blog__link {
+	color: var(--color_blue-green);
+}
+
+@media (max-width: 480px) {
+	.impressions {
+		align-items: flex-start;
+	}
+
+	.impressions .content-title {
+		text-align: start;
+	}
+
+	.list__card-blog {
+		display: flex;
+		width: 100%;
+	}
+
+	.card-blog {
+		flex-direction: column;
+		flex: 0 0 285px;
+		padding: 0;
+		gap: var(--gap_0);
+		scroll-snap-align: start;
+	}
+
+	.card-blog__image {
+		width: 100%;
+		border-radius: var(--border-radius_0);
+	}
+
+	.card-blog__content {
+		padding: 16px;
+		gap: var(--gap_16);
+		height: 200px;
+		flex: 0;
+	}
+
+	.card-blog__title {
+		font-size: var(--font-size_20);
+		line-height: var(--line-height_26);
+	}
+
+}

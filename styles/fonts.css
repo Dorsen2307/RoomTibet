@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'NextArt';
+	src:
+			url('../fonts/NEXTART-Bold.woff2') format('woff2'),
+			url('../fonts/NEXTART-Bold.woff') format('woff'),
+			url('../fonts/NEXTART-Bold.ttf') format('ttf');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src:
+			url('../fonts/NunitoSans-ExtraBold.woff2') format('woff2'),
+			url('../fonts/NunitoSans-ExtraBold.woff') format('woff'),
+			url('../fonts/NunitoSans-ExtraBold.ttf') format('ttf');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src:
+			url('../fonts/NunitoSans-Bold.woff2') format('woff2'),
+			url('../fonts/NunitoSans-Bold.woff') format('woff'),
+			url('../fonts/NunitoSans-Bold.ttf') format('ttf');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src:
+			url('../fonts/NunitoSans-Regular.woff2') format('woff2'),
+			url('../fonts/NunitoSans-Regular.woff') format('woff'),
+			url('../fonts/NunitoSans-Regular.ttf') format('ttf');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src:
+			url('../fonts/NunitoSans-SemiBold.woff2') format('woff2'),
+			url('../fonts/NunitoSans-SemiBold.woff') format('woff'),
+			url('../fonts/NunitoSans-SemiBold.ttf') format('ttf');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
